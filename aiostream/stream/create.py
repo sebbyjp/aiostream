@@ -7,7 +7,7 @@ import inspect
 import builtins
 import itertools
 
-from typing import (
+from typing_extensions import (
     AsyncIterable,
     Awaitable,
     Iterable,

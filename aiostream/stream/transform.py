@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import itertools
-from typing import (
+from typing_extensions import (
     Protocol,
     TypeVar,
     AsyncIterable,

@@ -7,7 +7,7 @@ import functools
 import warnings
 
 from .aiter_utils import AsyncIteratorContext, aiter, assert_async_iterable
-from typing import (
+from typing_extensions import (
     Any,
     AsyncIterator,
     Callable,

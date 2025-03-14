@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 import builtins
 
-from typing import TypeVar, Awaitable, Callable, AsyncIterable, AsyncIterator, Any
+from typing_extensions import TypeVar, Awaitable, Callable, AsyncIterable, AsyncIterator, Any
 
 from .combine import amap, smap
 from ..core import pipable_operator

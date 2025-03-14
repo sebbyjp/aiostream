@@ -1,6 +1,6 @@
 import asyncio
 import random as random_module
-from typing import AsyncIterable, AsyncIterator
+from typing_extensions import AsyncIterable, AsyncIterator
 
 from aiostream import operator, pipable_operator, pipe, streamcontext
 

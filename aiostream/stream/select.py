@@ -6,7 +6,7 @@ import asyncio
 import builtins
 import collections
 
-from typing import Awaitable, Callable, TypeVar, AsyncIterable, AsyncIterator
+from typing_extensions import Awaitable, Callable, TypeVar, AsyncIterable, AsyncIterator
 
 from . import transform
 from ..aiter_utils import aiter, anext

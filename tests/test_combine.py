@@ -1,4 +1,4 @@
-from typing import Awaitable
+from typing_extensions import Awaitable
 import pytest
 import asyncio
 

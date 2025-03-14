@@ -8,7 +8,7 @@ from types import TracebackType
 import enum
 import warnings
 import functools
-from typing import (
+from typing_extensions import (
     TYPE_CHECKING,
     AsyncContextManager,
     AsyncGenerator,

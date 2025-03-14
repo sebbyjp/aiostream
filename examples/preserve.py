@@ -1,5 +1,5 @@
 import asyncio
-from typing import AsyncIterator
+from typing_extensions import AsyncIterator
 
 from aiostream import operator, stream
 

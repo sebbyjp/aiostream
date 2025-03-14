@@ -6,7 +6,7 @@ import asyncio
 from collections import deque
 from contextlib import contextmanager
 from unittest.mock import Mock
-from typing import (
+from typing_extensions import (
     TYPE_CHECKING,
     Awaitable,
     Callable,

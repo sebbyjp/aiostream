@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import AsyncIterator, AsyncIterable, TypeVar, Union, cast
+from typing_extensions import AsyncIterator, AsyncIterable, TypeVar, Union, cast
 from typing_extensions import ParamSpec
 
 from . import combine

@@ -6,7 +6,7 @@ import asyncio
 import builtins
 import enum
 
-from typing import (
+from typing_extensions import (
     Awaitable,
     Protocol,
     TypeVar,

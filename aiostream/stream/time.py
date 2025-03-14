@@ -6,7 +6,7 @@ import asyncio
 from ..aiter_utils import anext
 from ..core import streamcontext, pipable_operator
 
-from typing import TypeVar, AsyncIterable, AsyncIterator
+from typing_extensions import TypeVar, AsyncIterable, AsyncIterator
 
 __all__ = ["spaceout", "delay", "timeout"]
 

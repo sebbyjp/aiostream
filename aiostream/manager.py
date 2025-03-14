@@ -9,7 +9,7 @@ from .aiter_utils import AsyncExitStack
 
 from .aiter_utils import anext
 from .core import streamcontext
-from typing import (
+from typing_extensions import (
     TYPE_CHECKING,
     Awaitable,
     List,
