@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools >= 69.5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiostream"
+dynamic = ["version"]
+description = "Generator-based operators for asynchronous iteration"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+authors = [
+    { name = "Vincent Michel", email = "vxgmichel@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "typing-extensions",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+]
+
+[tool.setuptools]
+packages = ["aiostream", "aiostream.stream"]
+
+[tool.setuptools.dynamic]
+version = {attr = "aiostream.__version__"}
+
+[project.urls]
+Homepage = "https://github.com/vxgmichel/aiostream"
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers --cov aiostream"
+testpaths = ["tests"]
+
+[tool.pyright]
+strict = [
+    "aiostream/aiter_utils.py",
+    "aiostream/manager.py",
+    "aiostream/pipe.py",
+    "aiostream/test_utils.py",
+    "aiostream/core.py",
+]
+
+[tool.mypy]
+packages = ["aiostream", "examples"]
+
+[tool.mypy-aiostream]
+strict = true
+
+[tool.mypy-examples]
+strict = true
+
+[tool.black]
+line-length = 88
+target_version = ["py39", "py310", "py311", "py312", "py313"]
+
+[tool.coverage.report]
+exclude_also = ["if TYPE_CHECKING:", "assert False"]
+
+[tool.ruff]
+ignore = ["E501", "F403"]
